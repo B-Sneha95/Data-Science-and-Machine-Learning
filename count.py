@@ -1,0 +1,82 @@
+import os
+# os.system('cls')
+
+Text = '  Apple      is a    fruit '
+i = 0
+n = len(Text)
+count = 0
+while i < n:
+    # Skip spaces
+    while i < n and Text[i] == ' ':
+        i += 1
+    # If a non-space character is found, it marks the start of a word
+    if i < n and Text[i] != ' ':
+        count += 1
+        # Skip the entire word
+        while i < n and Text[i] != ' ':
+            i += 1
+
+print(count)
+
+
+T='sivani is a good girl'
+print(T)
+print('\n')
+count=0
+for i in T:
+    if i=='a':
+        count=count+1
+        
+print("count of letter a in T is:",count)
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Text='  Apple      is a    fruit '
+print(Text)
+count_words=0
+for i in Text:
+    if i==' ':
+        break
+    for char in Text:
+         if i==' ' + 'char':
+           print("There is a word counted:",count_words+1)
+print(count_words)
+     
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Text='  Apple      is a    fruit '
+print(Text)
+count_words=0
+for char in Text:
+         if char==' ':
+           continue
+         else:
+            if char-1!=' ':
+             continue
+         count_words=count_words+1
+print(count_words)
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Text='  Apple      is a    fruit '
+i=0
+n=len(Text)
+count=0
+while i < n:
+    while i < n and Text[i]==' ':
+        i+=1
+    if i < n and Text[i]!=' ':
+        count+=1
+print(count)
+     
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     
+count_spaces=0
+count_spaces=count_spaces+1
+print(count_spaces)
+
+for char in Text:
+      if char!=' ':
+       count_words=count_words+1
+print(count_words)
+
+count=count_spaces - count_words
+print(count)
+
+count_words=count_spaces-count_words
